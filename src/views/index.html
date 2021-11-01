@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 
+        Aqui sucede lo mismo que en el cuerpo del html, solo que lo aplicamos al head
+    -->
+    <%- include('partials/header.html') %>
+</head>
+<body>
+    <!-- 
+        Incluimos aqui la barra de navegacion, ojo puesto que ha diferencia de la explicacion el formato para
+        cargar el incluide varia notablemente
+    -->
+    <%- include('partials/navbar.html') %>
+
+    <!-- aqui vamos a agregar la imagen en la cabecera-->
+    <header class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <img src="/img/pews-logo.png" class="animated bounceIn" alt="">
+            </div>
+        </div>
+    </header>
+    <!-- Aqui agregamos una seccion -->
+    <main class="container-fluid" id="about">
+        <div class="row bg-dark text-white p-5 text-center">
+            <div class="col-6">
+                <i class="fab fa-youtube fa-10x"></i>
+            </div>
+            <div class="col-6">
+                <h3>Nuestra historia</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae mollitia quaerat dolorem, libero sequi amet beatae vel
+                quo qui illo labore quibusdam! Fugiat sint omnis quae nihil alias pariatur excepturi.</p>
+            </div>
+        </div> 
+    </main>
+    <!-- 
+        Aqui incluimos el contnido del pie genericos a todos
+    -->
+    <%- include('partials/footer.html') %>
+</body>
+</html>
